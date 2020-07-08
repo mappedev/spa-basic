@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Router for SPA with JS Vanilla</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .menu-list {
+      height: 100px;
+      background-color: #162447;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .links {
+      color: white;
+      text-decoration: none;
+      transition: 100ms;
+      cursor: pointer;
+    }
+
+    .links:active {
+      transform: scale(0.9);
+    }
+
+    .list-item {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="menu-list">
+        <a class="links" onclick="router.loadRoute('')">
+          <li class="list-item">
+            <h3>HOME</h3>
+          </li>
+        </a>
+        <a class="links" onclick="router.loadRoute('contact')">
+          <li class="list-item">
+            <h3>CONTACT</h3>
+          </li>
+        </a>
+        <a class="links" onclick="router.loadRoute('aboutme')">
+          <li class="list-item">
+            <h3>ABOUT ME</h3>
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div data-router></div>
+  </section>
+
+  <script text="text/javascript" src="router.js"></script>
+  <script text="text/javascript" src="routes.js"></script>
+  <script text="text/javascript" src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Practicando SPA con JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server-spa . ./index.html"
+  },
+  "keywords": [
+    "SPA",
+    "JavaScript",
+    "Frontend Newbie"
+  ],
+  "author": "Mario Peña <mappedev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server-spa": "^1.3.0"
+  }
+}
